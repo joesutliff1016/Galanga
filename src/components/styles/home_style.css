@@ -1,0 +1,299 @@
+
+.App {
+	margin:0;
+	padding:0;
+}
+body {
+	max-width:1920px;
+	margin:0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+#home_content {
+	display:grid;
+  grid-template-columns:repeat(6, 2fr);
+	grid-template-rows:repeat(4, minmax(150px, auto));
+}
+.home_one {
+  grid-column: 1/7;
+	background-image:linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),url('../images/main_background.jpg');
+	height:100vh;
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
+
+}
+.home_one nav a {
+	display: none;
+}
+.menu-item {
+	color:#fff;
+	text-decoration: none;
+	margin-top: .5rem;
+
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: absolute;
+  width: 35px;
+  height: 20px;
+  right: 30px;
+  top: 30px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+	background: #fff;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #171717;
+  padding: 2.5em 1.5em 0;
+	font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+	overflow-y: hidden !important;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #171717;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+#intro {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+}
+
+#demo {
+	display: none;
+}
+#intro h1 {
+	margin: 0;
+	text-align: center;
+	font-size: 3rem;
+	color:#fff;
+	font-family: 'Rancho', cursive;
+
+}
+#intro p {
+	margin: 0;
+	text-align: center;
+	font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+	color: #fff;
+}
+#arrow {
+	position: relative;
+	margin:auto;
+	top:0;
+	right:0;
+	bottom: 0;
+	left: 0;
+}
+.arrow-down {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.arrow-down::after {
+	content: "";
+	width: 1.5rem;
+	height: 1.5rem;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right:0;
+	bottom: 0;
+	left:0;
+	border-right: 4px solid #fff;
+	border-bottom: 4px solid #fff;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-animation: 3s arrow infinite ease;
+	animation: 3s arrow infinite ease;
+
+}
+@-webkit-keyframes arrow {
+	0%, 100% {
+		top: 50px;
+	}
+	50% {
+		top:80px;
+	}
+}
+@keyframes arrow {
+	0%, 100% {
+		top: 50px;
+	}
+	50% {
+		top:80px;
+	}
+}
+
+.home_two{
+  grid-column: 1/7;
+	position: relative;
+}
+
+
+.home_two h2 {
+	margin-top: 50px;
+	margin-bottom: 10px;
+	font-family: 'Rancho', cursive;
+	font-size: 3rem;
+	color: #f79e02;
+	z-index: 1;
+	text-align: center;
+}
+.home_two p {
+	width: 95%;
+	margin: 0 auto 50px auto;
+	font-size: 1rem;
+	color: #8f9799;
+	text-align: center;
+}
+#bottom_text {
+	margin-top: 50px;
+}
+
+.home_three {
+	grid-column: 1/7;
+	background: #f79e02;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.home_three h3 {
+	text-align: center;
+	margin: 0 auto 25px auto;
+	font-family: 'Rancho', cursive;
+	font-size: 3rem;
+	color: #fff;
+
+}
+.three_p{
+	width: 95%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1rem;
+	padding: 0;
+  font-family: 'Raleway', sans-serif;
+	color:#fff;
+	font-style: italic;
+}
+.home_three .small {
+	width:50%;
+	font-size:.8rem;
+	margin: 0 auto;
+	text-align: center;
+	color:#fff;
+	padding-bottom:15px;
+
+}
+
+
+@media screen and (min-width: 768px){
+	#intro {
+		width: 66.666%;
+	}
+	#intro h1 {
+		font-size: 4rem;
+	}
+	#intro p {
+		font-size: 1.3rem;
+	}
+
+	.home_two p {
+		font-size: 1.3rem;
+		width: 66.666%;
+
+	}
+	.three_p {
+		width: 66.666%;
+		font-size: 1.3rem;
+	}
+	.small {
+		font-size: 1rem;
+	}
+
+}
+@media screen and (min-width: 1024px){
+	.bm-burger-button, .bm-burger-bars {
+		display: none;
+	}
+	.home_one nav {
+		padding-top: 25px;
+		padding-bottom: 10px;
+		text-align: center;
+
+
+	}
+	.home_one nav a {
+		display: unset;
+		text-decoration: none;
+		color: #fff;
+		margin-left: 25px;
+		font-size: 1.2rem;
+	}
+	.home_one nav a.urhere{
+		border-bottom: 1px solid #fff;
+	}
+	.home_one nav a.urhere:hover{
+		border-bottom: 1px solid #f79e02;
+	}
+	.home_one nav a:hover{
+		color: #f79e02;
+
+	}
+	#demo {
+		display: unset;
+		position: absolute;
+		top: 85px;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		text-align: left;
+		padding: 10px;
+	  font-family: 'Raleway', sans-serif;
+		background: #fff;
+		color: #000;
+		border-radius: 5px;
+		z-index: 100;
+	}
+}
+@media screen and (min-width: 1280px){
+	#demo {
+		width: 33.333%;
+
+	}
+}
