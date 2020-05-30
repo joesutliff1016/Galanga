@@ -4,7 +4,7 @@ A restaurant website that allows the site owner to update menu pages from an adm
 
 ## Technologies Used
 
-React, html, css and Firebase NoSql database.
+React, Html, Css and Firebase NoSQL database.
 
 ## Contributors
 
