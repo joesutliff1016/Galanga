@@ -8,4 +8,4 @@ React, html, css and Firebase NoSql database.
 
 ## Contributors
 
-- Joe Sutliff <joesutliffwebdev.com> 
+- Joe Sutliff
