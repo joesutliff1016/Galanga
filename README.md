@@ -4,7 +4,10 @@ A restaurant website that allows the site owner to sign in and update menu pages
 
 ## Technologies Used
 
-React, Html, Css and Firebase NoSQL database.
+- React
+- Html
+- Css
+- Firebase NoSql
 
 ## Contributors
 
